@@ -5,6 +5,9 @@ import (
 	"github.com/RakunKo/Tistory-Readme-Go/pkg/model"
 )
 
+/**
+svg형식으로 반들어 반환합니다
+*/
 func BuildSvg(channel model.Channel, color string) string {
 	blogName := channel.Title
 	userName := channel.ManagingEditor

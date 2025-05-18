@@ -6,6 +6,10 @@ import (
 	"strings"
 )
 
+/**
+받은 path를 짤라 userName, color를 추출합니다.
+Rss값을 통해 svg를 반환합니다.
+*/
 func BadgeHandler(w http.ResponseWriter, r *http.Request) {
 	path := r.URL.Path
 	parts := strings.Split(path, "/")
