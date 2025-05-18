@@ -2,14 +2,14 @@
   "version": 2,
   "builds": [
     {
-      "src": "cmd/server/handler.go",
+      "src": "api/*.go",
       "use": "@vercel/go"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
-      "dest": "cmd/server/handler.go"
+      "src": "/tistory-badge/(.*)",
+      "dest": "/api/tistory-badge.go"
     }
   ]
 }
