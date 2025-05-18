@@ -3,7 +3,7 @@ package service
 import (
 	"encoding/xml"
 	"fmt"
-	"github.com/RakunKo/Tistory-Readme-Go/internal/model"
+	"github.com/RakunKo/Tistory-Readme-Go/pkg/model"
 	"net/http"
 )
 

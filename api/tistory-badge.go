@@ -1,7 +1,7 @@
 package handler
 
 import (
-	"github.com/RakunKo/Tistory-Readme-Go/internal/controller"
+	"github.com/RakunKo/Tistory-Readme-Go/pkg/controller"
 	"net/http"
 )
 

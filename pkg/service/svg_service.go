@@ -2,7 +2,7 @@ package service
 
 import (
 	"fmt"
-	"github.com/RakunKo/Tistory-Readme-Go/internal/model"
+	"github.com/RakunKo/Tistory-Readme-Go/pkg/model"
 )
 
 func BuildSvg(channel model.Channel) string {

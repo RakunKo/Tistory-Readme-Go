@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/RakunKo/Tistory-Readme-Go/internal/controller"
+	"github.com/RakunKo/Tistory-Readme-Go/pkg/controller"
 	"log"
 	"net/http"
 )
