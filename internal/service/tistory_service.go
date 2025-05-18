@@ -3,8 +3,8 @@ package service
 import (
 	"encoding/xml"
 	"fmt"
+	"github.com/RakunKo/Tistory-Readme-Go/internal/model"
 	"net/http"
-	"tistory-readme-go/internal/model"
 )
 
 func GetTistoryRss(userName string) (model.Channel, error) {

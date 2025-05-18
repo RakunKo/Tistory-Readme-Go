@@ -1,9 +1,9 @@
 package controller
 
 import (
+	"github.com/RakunKo/Tistory-Readme-Go/internal/service"
 	"net/http"
 	"strings"
-	"tistory-readme-go/internal/service"
 )
 
 func BadgeHandler(w http.ResponseWriter, r *http.Request) {
