@@ -1,0 +1,37 @@
+# 바이너리 파일
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# 빌드 아웃풋 디렉토리
+/bin/
+/out/
+
+# 의존성 다운로드 디렉토리
+/vendor/
+
+# Go 빌드 캐시
+*.test
+*.prof
+*.out
+
+# Go 모듈 캐시 및 환경변수
+go.sum
+go.mod
+
+# IDE 및 에디터 설정 파일
+.vscode/
+.idea/
+*.iml
+
+# 운영체제별 숨김 파일
+.DS_Store
+Thumbs.db
+
+# 로그 파일
+*.log
+
+# 환경변수 설정 파일
+.env
