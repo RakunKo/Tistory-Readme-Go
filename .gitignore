@@ -18,8 +18,6 @@
 *.out
 
 # Go 모듈 캐시 및 환경변수
-go.sum
-go.mod
 
 # IDE 및 에디터 설정 파일
 .vscode/
