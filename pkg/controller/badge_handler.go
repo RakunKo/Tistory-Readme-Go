@@ -14,6 +14,7 @@ func BadgeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	userName := parts[2]
+	color := parts[3]
 
 	channel, err := service.GetTistoryRss(userName)
 	if err != nil {
@@ -21,7 +22,7 @@ func BadgeHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	svg := service.BuildSvg(channel)
+	svg := service.BuildSvg(channel, color)
 	w.Header().Set("Content-Type", "image/svg+xml")
 	w.Write([]byte(svg))
 }

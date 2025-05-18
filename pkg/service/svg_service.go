@@ -5,14 +5,14 @@ import (
 	"github.com/RakunKo/Tistory-Readme-Go/pkg/model"
 )
 
-func BuildSvg(channel model.Channel) string {
+func BuildSvg(channel model.Channel, color string) string {
 	blogName := channel.Title
 	userName := channel.ManagingEditor
 
 	return fmt.Sprintf(`<svg xmlns="http://www.w3.org/2000/svg" width="180" height="62">
   <foreignObject width="100%%" height="100%%">
     <div xmlns="http://www.w3.org/1999/xhtml" 
-         style="background-color: #eb531f; border-radius: 8px; padding: 10px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
+         style="background-color: #%s; border-radius: 8px; padding: 10px; box-shadow: 0 1px 2px rgba(0, 0, 0, 0.08);
                 display: flex; align-items: center; font-family: Arial, sans-serif; width: 100%%; box-sizing: border-box; height: 100%%;">
       
       <div style="width: 36px; height: 36px; border-radius: 50%%; overflow: hidden; margin-right: 10px; display: flex; align-items: center; justify-content: center;">
@@ -35,5 +35,5 @@ func BuildSvg(channel model.Channel) string {
       </div>
     </div>
   </foreignObject>
-</svg>`, userName, blogName)
+</svg>`, color, userName, blogName)
 }
